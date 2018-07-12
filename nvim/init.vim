@@ -1,5 +1,20 @@
-source $HOME/.config/nvim/config/init.vimrc
-source $HOME/.config/nvim/config/general.vimrc
-source $HOME/.config/nvim/config/plugins.vimrc
-source $HOME/.config/nvim/config/keys.vimrc
-source $HOME/.config/nvim/config/line.vimrc
+let $VARPATH = '~/.cache'
+
+" Function to source only if file exists {
+function! SourceIfExists(file)
+  if filereadable(expand(a:file))
+    exe 'source' a:file
+  endif
+endfunction
+" }
+
+" be iMproved
+set nocompatible
+
+if has('nvim')
+    call SourceIfExists('./config/nvim-plugins.vim')
+else
+    call SourceIfExists('./config/vim-plugins.vim')
+endif
+
+call SourceIfExists('./config/general.vim')
