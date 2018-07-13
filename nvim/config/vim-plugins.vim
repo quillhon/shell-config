@@ -1,6 +1,6 @@
 " Plug {
     " Basic Configation {
-        call plug#begin('~/.local/share/nvim/plugged')
+        call plug#begin('~/.vim/plugged')
     " }
 
     " Install Plugin {
