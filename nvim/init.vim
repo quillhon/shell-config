@@ -24,6 +24,7 @@ augroup MyAutoCmd
     autocmd!
 augroup END
 
+call SourceIfExists($VIMPATH.'/config/plugins.vim')
 call SourceIfExists($VIMPATH.'/config/general.vim')
 call SourceIfExists($VIMPATH.'/config/mappings.vim')
 call SourceIfExists($VIMPATH.'/config/theme.vim')

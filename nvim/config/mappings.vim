@@ -7,7 +7,7 @@
 
 " Window-control prefix
 nnoremap  [Window]   <nop>
-nmap      s [Window]
+nmap s [Window]
 
 " Fix keybind name for Ctrl+Spacebar
 map <nul> <c-space>
@@ -173,7 +173,6 @@ noremap  mj :m+<cr>
 " Session management shortcuts
 nmap <silent> <leader>se :<c-u>execute 'SessionSave' fnamemodify(resolve(getcwd()), ':p:gs?/?_?')<cr>
 nmap <silent> <leader>os :<c-u>execute 'source '.g:session_directory.'/'.fnamemodify(resolve(getcwd()), ':p:gs?/?_?').'.vim'<cr>
-
 " }}}
 
 " Display diff from last save {{{
@@ -207,5 +206,7 @@ nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
 nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
+
+" }}}
 
 " vim: set ts=4 sw=4 tw=80 noet :

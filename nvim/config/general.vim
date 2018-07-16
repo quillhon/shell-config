@@ -151,7 +151,7 @@ set number              " Show line numbers
 set noruler             " Disable default status ruler
 set list                " Show hidden characters
 
-set showtabline=2       " Always show the tabs line
+set showtabline=0       " Disable the tabs line
 set winwidth=30         " Minimum width for active window
 set winheight=1         " Minimum height for active window
 set pumheight=15        " Pop-up menu's line height
