@@ -13,6 +13,8 @@
         Plug 'bling/vim-airline'
         Plug 'valloric/matchtagalways'
         Plug 'tpope/vim-fugitive'
+        Plug 'christoomey/vim-tmux-navigator'
+        Plug 'benmills/vimux'
 
         " Syntax
         Plug 'pangloss/vim-javascript'

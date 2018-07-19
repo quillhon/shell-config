@@ -1,5 +1,9 @@
 " *Use <leader> key to toggle plugins*
 
+" vimux {
+    nnoremap <leader>vp :VimuxPromptCommand<cr>
+" }
+
 " fzf {
     nmap <leader>f :Files<cr>
     nmap <leader>b :Buffers<cr>
